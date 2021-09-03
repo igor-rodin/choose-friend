@@ -1,0 +1,59 @@
+.friends {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-y: auto;
+  background-color: $main-color;
+  padding: 14px 16px;
+}
+
+.friends__caption {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: $second-color;
+}
+
+.friends__filter {
+  grid-column: 1/3;
+  grid-row: 2;
+  display: flex;
+  padding: 10px 14px;
+}
+
+.friends__filter-input {
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  padding: 6px 14px;
+  font-size: 12px;
+  line-height: 1.166;
+  flex: 1;
+
+  &:first-of-type {
+    margin-right: 7px;
+  }
+
+  &:last-of-type {
+    margin-left: 7px;
+  }
+
+  &::placeholder {
+    color: #9F9F9F;
+  }
+}
+
+.friends-all {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.friends-choosed {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.friends__list {
+  flex: 1;
+  overflow-y: auto;
+  border-top: 1px solid #F0F0F0;
+}

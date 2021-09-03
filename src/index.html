@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <script defer src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <section id="container" class="container">
+      <div class="friends-room">
+        <div class="friends-room__caption">Выберите друзей</div>
+        <div class="friends__filter">
+          <input type="search" class="friends__filter-input" id="allFriends" data-zone-id='1' placeholder="Начните вводить имя друга">
+          <input type="search" class="friends__filter-input" id="allFriends" data-zone-id='2' placeholder="Название">
+        </div>
+        <div id="friendsAll" class="friends friends-all">
+          <div class="friends__caption">Ваши друзья</div>
+          <ul class="friends__list" data-drop-zone="1">
+          </ul>
+        </div>
+        <div id="friendsChoosed" class="friends friends-choosed">
+          <div class="friends__caption">Друзья в списке</div>
+          <ul class="friends__list" data-drop-zone="2">
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

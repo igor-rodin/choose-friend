@@ -1,0 +1,38 @@
+.friend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 6px;
+  font-size: 15px;
+}
+
+.friend__image-wrap {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-right: 7px;
+}
+
+.friend__name {
+  color: $second-color;
+  font-family: $second-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.166;
+  flex: 1;
+}
+
+
+.friend:hover {
+  background-color: #F0F0F0;
+}
+
+.friend__btn-img {
+  width: 100%;
+  height: auto;
+}
+
+.friend__btn:hover {
+  cursor: pointer;
+}
